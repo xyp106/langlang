@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪浪山小妖怪 - 电影介绍</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 水墨粒子背景 -->
+    <canvas id="ink-canvas"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🐷</span>
+                <span class="logo-text">浪浪山小妖怪</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="characters.html" class="nav-link active">电影介绍</a>
+                <a href="world.html" class="nav-link">小妖怪图鉴</a>
+                <a href="about.html" class="nav-link">制作历程</a>
+                <a href="contact.html" class="nav-link">关于我们</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 电影介绍英雄区域 -->
+    <section class="movie-hero">
+        <div class="movie-hero-container">
+            <div class="movie-poster">
+                <img src="images/mmexport1765958830771.jpg" alt="浪浪山小妖怪电影海报">
+            </div>
+            <div class="movie-info">
+                <h1 class="movie-title">浪浪山小妖怪：奇幻之旅</h1>
+                <div class="movie-meta">
+                    <span class="movie-rating">
+                        <span class="rating-star">⭐</span>
+                        <span class="rating-score">9.2</span>
+                    </span>
+                    <span class="movie-year">2025</span>
+                    <span class="movie-duration">90分钟</span>
+                </div>
+                <p class="movie-description">
+                    在古老的浪浪山中，一群可爱的妖怪们过着平静的生活。小猪妖、蛤蟆精、黄鼠狼精等小妖怪们每天在山林中嬉戏玩耍，
+                    他们善良、乐观，用自己的方式守护着这片美丽的土地。然而，一场突如其来的危机打破了平静的生活，
+                    小妖怪们必须团结起来，踏上一段充满奇幻冒险的旅程……
+                </p>
+                <div class="movie-genres">
+                    <span class="genre-tag">动画</span>
+                    <span class="genre-tag">奇幻</span>
+                    <span class="genre-tag">冒险</span>
+                    <span class="genre-tag">治愈</span>
+                </div>
+                <div class="movie-actions">
+                    <button class="btn-primary">观看预告片</button>
+                    <button class="btn-secondary">了解更多</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要角色区域 -->
+    <section class="characters-section">
+        <div class="container">
+            <h2 class="section-title">主要角色</h2>
+            <div class="characters-grid">
+                <div class="character-profile">
+                    <div class="character-avatar">
+                        <img src="images/mmexport1765958673105.jpg" alt="小猪妖">
+                    </div>
+                    <h3 class="character-name">小猪妖</h3>
+                    <p class="character-role">配音：小明</p>
+                    <p class="character-bio">乐观善良的小猪妖，总是乐于助人，是大家的好朋友。</p>
+                </div>
+
+                <div class="character-profile">
+                    <div class="character-avatar">
+                        <img src="images/mmexport1765958670534.jpg" alt="蛤蟆精">
+                    </div>
+                    <h3 class="character-name">蛤蟆精</h3>
+                    <p class="character-role">配音：小红</p>
+                    <p class="character-bio">文艺优雅的蛤蟆精，擅长书法和音乐，是团队中的智慧担当。</p>
+                </div>
+
+                <div class="character-profile">
+                    <div class="character-avatar">
+                        <img src="images/mmexport1765958679470.jpg" alt="黄鼠狼精">
+                    </div>
+                    <h3 class="character-name">黄鼠狼精</h3>
+                    <p class="character-role">配音：小刚</p>
+                    <p class="character-bio">机智狡猾的黄鼠狼精，总有各种鬼点子，但心地善良。</p>
+                </div>
+
+                <div class="character-profile">
+                    <div class="character-avatar">
+                        <img src="images/mmexport1765958676931.jpg" alt="猩猩怪">
+                    </div>
+                    <h3 class="character-name">猩猩怪</h3>
+                    <p class="character-role">配音：大力</p>
+                    <p class="character-bio">憨厚老实的猩猩怪，力气大但心地善良，是大家的好帮手。</p>
+                </div>
+
+                <div class="character-profile">
+                    <div class="character-avatar">
+                        <img src="images/d9d8a38689bba8b3f3c73461e7a8d5a5.jpg" alt="小兔精">
+                    </div>
+                    <h3 class="character-name">小兔精</h3>
+                    <p class="character-role">配音：小白</p>
+                    <p class="character-bio">温柔善良的小兔精，擅长医术，是团队的治愈师。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 剧照轮播 -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">精彩剧照</h2>
+            <div class="gallery-container">
+                <button class="gallery-nav gallery-prev" id="gallery-prev">&lt;</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery-track" id="gallery-track">
+                        <div class="gallery-slide">
+                            <img src="images/mmexport1765958848830.jpg" alt="剧照1">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/mmexport1765958851050.jpg" alt="剧照2">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/mmexport1765958853179.jpg" alt="剧照3">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/mmexport1765958855734.jpg" alt="剧照4">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/mmexport1765958879931.jpg" alt="剧照5">
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/mmexport1765958952803.jpg" alt="剧照6">
+                        </div>
+                    </div>
+                </div>
+                <button class="gallery-nav gallery-next" id="gallery-next">&gt;</button>
+            </div>
+            <div class="gallery-indicators" id="gallery-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+                <span class="indicator" data-slide="5"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p class="footer-description">
+                    🐷 浪浪山小妖怪团队致力于创作温暖治愈的动画作品，希望通过我们的作品传递快乐与希望。
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="characters.html">电影介绍</a>
+                    <a href="world.html">小妖怪图鉴</a>
+                    <a href="about.html">制作历程</a>
+                    <a href="contact.html">关于我们</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <div class="contact-info">
+                    <p>📧 info@langlangshan.com</p>
+                    <p>📱 公众号：浪浪山小妖怪</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="微信">💬</a>
+                        <a href="#" class="social-link" title="抖音">🎵</a>
+                        <a href="#" class="social-link" title="小红书">📖</a>
+                        <a href="#" class="social-link" title="B站">📺</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪浪山小妖怪 - 小妖怪图鉴</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 水墨粒子背景 -->
+    <canvas id="ink-canvas"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🐷</span>
+                <span class="logo-text">浪浪山小妖怪</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">首页</a>
+                <a href="characters.html" class="nav-link">电影介绍</a>
+                <a href="world.html" class="nav-link">小妖怪图鉴</a>
+                <a href="about.html" class="nav-link">制作历程</a>
+                <a href="contact.html" class="nav-link">关于我们</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">小妖怪图鉴</h1>
+            <p class="hero-subtitle">探索浪浪山中可爱的妖怪朋友们</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/dba98cc8f73602c4f79df1d8d8032ad2.jpeg" alt="浪浪山风景">
+        </div>
+    </section>
+
+    <!-- 内容区域 -->
+    <main class="main-content">
+        <!-- 分类标签 -->
+        <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">全部</button>
+            <button class="tab-btn" data-filter="healing">治愈系</button>
+            <button class="tab-btn" data-filter="active">活泼型</button>
+            <button class="tab-btn" data-filter="friendship">友情型</button>
+            <button class="tab-btn" data-filter="artistic">艺术型</button>
+        </div>
+
+        <!-- 妖怪卡片网格 -->
+        <div class="characters-grid" id="characters-grid">
+            <!-- 小猪妖 -->
+            <div class="character-card" data-category="friendship">
+                <div class="card-image">
+                    <img src="images/mmexport1765958673105.jpg" alt="小猪妖">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="character-name">小猪妖</h3>
+                    <p class="character-desc">乐观善良的小猪妖，总是乐于助人，是浪浪山最受欢迎的朋友。</p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">可爱度</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <span class="stat-value">9.5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">力量</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 70%"></div>
+                            </div>
+                            <span class="stat-value">7.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="stat-value">8.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 蛤蟆精 -->
+            <div class="character-card" data-category="artistic">
+                <div class="card-image">
+                    <img src="images/mmexport1765958670534.jpg" alt="蛤蟆精">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="character-name">蛤蟆精</h3>
+                    <p class="character-desc">文艺优雅的蛤蟆精，擅长书法和音乐，是浪浪山的艺术家。</p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">可爱度</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="stat-value">9.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">力量</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="stat-value">6.0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <span class="stat-value">9.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 黄鼠狼精 -->
+            <div class="character-card" data-category="active">
+                <div class="card-image">
+                    <img src="images/mmexport1765958679470.jpg" alt="黄鼠狼精">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="character-name">黄鼠狼精</h3>
+                    <p class="character-desc">机智狡猾的黄鼠狼精，总有各种鬼点子，但心地善良。</p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">可爱度</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="stat-value">8.5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">力量</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="stat-value">7.5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="stat-value">9.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 猩猩怪 -->
+            <div class="character-card" data-category="friendship">
+                <div class="card-image">
+                    <img src="images/mmexport1765958676931.jpg" alt="猩猩怪">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="character-name">猩猩怪</h3>
+                    <p class="character-desc">憨厚老实的猩猩怪，力气大但心地善良，是大家的好帮手。</p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">可爱度</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 88%"></div>
+                            </div>
+                            <span class="stat-value">8.8</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">力量</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <span class="stat-value">9.5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="stat-value">7.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 更多妖怪卡片 -->
+            <div class="character-card" data-category="healing">
+                <div class="card-image">
+                    <img src="images/d9d8a38689bba8b3f3c73461e7a8d5a5.jpg" alt="小兔精">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h3 class="character-name">小兔精</h3>
+                    <p class="character-desc">温柔善良的小兔精，擅长医术，是浪浪山的治愈师。</p>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">可爱度</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 98%"></div>
+                            </div>
+                            <span class="stat-value">9.8</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">力量</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="stat-value">4.5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">智慧</span>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 88%"></div>
+                            </div>
+                            <span class="stat-value">8.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p class="footer-description">
+                    🐷 浪浪山小妖怪团队致力于创作温暖治愈的动画作品，希望通过我们的作品传递快乐与希望。
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="characters.html">电影介绍</a>
+                    <a href="world.html">小妖怪图鉴</a>
+                    <a href="about.html">制作历程</a>
+                    <a href="contact.html">关于我们</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <div class="contact-info">
+                    <p>📧 info@langlangshan.com</p>
+                    <p>📱 公众号：浪浪山小妖怪</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="微信">💬</a>
+                        <a href="#" class="social-link" title="抖音">🎵</a>
+                        <a href="#" class="social-link" title="小红书">📖</a>
+                        <a href="#" class="social-link" title="B站">📺</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪浪山小妖怪 - 制作历程</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 水墨粒子背景 -->
+    <canvas id="ink-canvas"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🐷</span>
+                <span class="logo-text">浪浪山小妖怪</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">首页</a>
+                <a href="characters.html" class="nav-link">电影介绍</a>
+                <a href="world.html" class="nav-link">小妖怪图鉴</a>
+                <a href="about.html" class="nav-link active">制作历程</a>
+                <a href="contact.html" class="nav-link">关于我们</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">我们的故事</h1>
+            <p class="page-subtitle">从创意萌发到电影诞生的制作历程</p>
+        </div>
+    </section>
+
+    <!-- 制作历程区域 -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="timeline-layout">
+                <!-- 时间线 -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023年6月</div>
+                            <h3 class="timeline-title">创意萌发</h3>
+                            <p class="timeline-description">
+                                项目立项，团队开始构思故事。希望创作一部温暖治愈的动画电影，
+                                让观众感受到小妖怪们的纯真善良和团结友爱的力量。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958952803.jpg" alt="创意萌发阶段">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023年10月</div>
+                            <h3 class="timeline-title">角色设计</h3>
+                            <p class="timeline-description">
+                                设计小猪妖、蛤蟆精、黄鼠狼精等主要角色。每个角色都有独特的性格特点，
+                                但都拥有善良美好的内心，这是故事的核心主题。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958958313.jpg" alt="角色设计阶段">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024年2月</div>
+                            <h3 class="timeline-title">剧本创作</h3>
+                            <p class="timeline-description">
+                                编写完整剧本，构建浪浪山的世界观。故事围绕小妖怪们的冒险展开，
+                                传递勇气、友谊和爱的主题。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958963228.jpg" alt="剧本创作阶段">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024年6月</div>
+                            <h3 class="timeline-title">动画制作</h3>
+                            <p class="timeline-description">
+                                进入动画制作阶段，使用精美的2D手绘动画。每个场景都精心设计，
+                                展现浪浪山的美丽风光和妖怪们的可爱模样。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958965080.jpg" alt="动画制作阶段">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024年10月</div>
+                            <h3 class="timeline-title">音乐创作</h3>
+                            <p class="timeline-description">
+                                邀请专业音乐团队创作主题曲和配乐。音乐风格轻快活泼，
+                                配合动画展现出温暖治愈的氛围。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958972805.jpg" alt="音乐创作阶段">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025年2月</div>
+                            <h3 class="timeline-title">后期制作</h3>
+                            <p class="timeline-description">
+                                完成剪辑、调色、特效等后期工作。确保每一帧动画都达到最佳效果，
+                                为观众呈现完美的视听盛宴。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958983564.jpg" alt="后期制作阶段">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025年8月</div>
+                            <h3 class="timeline-title">电影上映</h3>
+                            <p class="timeline-description">
+                                《浪浪山小妖怪：奇幻之旅》终于与观众见面！感谢所有支持我们的朋友，
+                                希望这部电影能为大家带来欢乐和感动。
+                            </p>
+                            <div class="timeline-image">
+                                <img src="images/mmexport1765958988879.jpg" alt="电影上映">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 理念卡片 -->
+                <div class="philosophy-cards">
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">🎨</div>
+                        <h3>创造美丽</h3>
+                        <p>用精美的动画和细腻的画风，为观众创造视觉上的享受</p>
+                    </div>
+
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">💝</div>
+                        <h3>传递温暖</h3>
+                        <p>通过小妖怪们的故事，传递善良、勇气和爱的正能量</p>
+                    </div>
+
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">✨</div>
+                        <h3>激发想象</h3>
+                        <p>带领观众进入奇幻的浪浪山世界，激发无限的想象力</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系表单 -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <p class="section-subtitle">有任何问题或建议？欢迎与我们取得联系</p>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">主题</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">留言</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">发送消息</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p class="footer-description">
+                    🐷 浪浪山小妖怪团队致力于创作温暖治愈的动画作品，希望通过我们的作品传递快乐与希望。
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="characters.html">电影介绍</a>
+                    <a href="world.html">小妖怪图鉴</a>
+                    <a href="about.html">制作历程</a>
+                    <a href="contact.html">关于我们</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <div class="contact-info">
+                    <p>📧 info@langlangshan.com</p>
+                    <p>📱 公众号：浪浪山小妖怪</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="微信">💬</a>
+                        <a href="#" class="social-link" title="抖音">🎵</a>
+                        <a href="#" class="social-link" title="小红书">📖</a>
+                        <a href="#" class="social-link" title="B站">📺</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
